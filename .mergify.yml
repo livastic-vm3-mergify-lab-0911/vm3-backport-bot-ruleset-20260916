@@ -1,0 +1,10 @@
+pull_request_rules:
+  - name: vm3 backport bot ruleset b7p5
+    conditions:
+      - title = VM3_BACKPORT_BOT_RULESET_B7P5
+      - merged
+    actions:
+      backport:
+        bot_account: livastic-vm3-secondary-20260911
+        branches:
+          - release
